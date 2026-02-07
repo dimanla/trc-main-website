@@ -261,6 +261,13 @@ header {
     background-position: center;
 }
 
+.hero.hero-attic {
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)),
+        url('../images/attic-insulation-main.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 .hero-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -365,15 +372,33 @@ header {
     }
 
     .trust-badge {
-        font-size: 0.75rem;
-        padding: 0.6rem 0.9rem;
+        font-size: 0.56rem;
+        /* 25% smaller than 0.75rem */
+        padding: 0.45rem 0.675rem;
+        /* 25% smaller padding */
         flex-shrink: 0;
-        min-width: 160px;
+        min-width: 120px;
     }
 
     .hero-grid {
         gap: 2rem;
     }
+}
+
+/* Center service card icons globally */
+.s-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: rgba(3, 105, 161, 0.1);
+    border-radius: 50%;
+    margin: 0 auto 1rem auto;
+}
+
+.s-icon i {
+    font-size: 1.5rem;
 }
 
 @media (min-width: 768px) {
