@@ -1,4 +1,12 @@
 User-agent: *
 Disallow: /thank-you.html
+Disallow: /samples/
+Disallow: /.agent/
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+Disallow: /fonts/
+Disallow: /privacy-policy.html
+Disallow: /terms-and-conditions.html
 
 Sitemap: https://texasrightchoice.com/sitemap.xml
