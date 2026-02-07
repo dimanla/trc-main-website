@@ -271,7 +271,7 @@ header {
 }
 
 .hero-content h1 {
-    color: var(--primary-navy);
+    color: var(--background-light);
     font-size: 2.8rem;
     margin-bottom: 1.5rem;
     line-height: 1.1;
@@ -281,8 +281,8 @@ header {
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: var(--text-dark);
-    opacity: 0.9;
+    color: var(--background-light);
+    opacity: 0.95;
 }
 
 .trust-badges {
