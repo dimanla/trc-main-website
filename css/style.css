@@ -883,6 +883,106 @@ details[open] summary::after {
     content: '−';
 }
 
+/* Comprehensive Mobile Optimizations */
+@media (max-width: 767px) {
+
+    /* Prevent horizontal scroll */
+    * {
+        max-width: 100%;
+    }
+
+    /* Container adjustments */
+    .container {
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+    /* Image responsiveness */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Card adjustments */
+    .solution-card,
+    .service-item {
+        padding: 1.5rem;
+        min-height: auto;
+    }
+
+    /* Typography adjustments */
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.75rem !important;
+    }
+
+    h3 {
+        font-size: 1.5rem !important;
+    }
+
+    /* Button adjustments */
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Section padding */
+    .section-padding {
+        padding: 2rem 0;
+    }
+
+    /* Form adjustments */
+    .form-control {
+        font-size: 16px;
+        /* Prevents zoom on iOS */
+    }
+
+    /* Navigation adjustments */
+    .nav-items {
+        gap: 1rem;
+    }
+
+    /* Ensure no element causes overflow */
+    .hero-grid,
+    .grid-2x3,
+    .service-list-grid {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Footer adjustments */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-column h4 {
+        margin-bottom: 0.75rem;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
 /* Professional Mobile Float */
 @media (max-width: 767px) {
     #mobile-float-call {
