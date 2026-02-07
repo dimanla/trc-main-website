@@ -1,0 +1,852 @@
+:root {
+    --primary-navy: #0F172A;
+    --primary-slate: #334155;
+    --cta-blue: #0369A1;
+    --background-light: #F8FAFC;
+    --text-primary: #020617;
+    --text-secondary: #4b5563;
+    --white: #ffffff;
+    --accent-gold: #FFD700;
+    --accent-green: #16a34a;
+    --accent-red: #DC2626;
+    --border-light: #e2e8f0;
+    --grid-gap: 1rem;
+    --max-width: 1240px;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --card-hover-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+    /* Missing variables used in landing pages */
+    --primary-blue: #0369A1;
+    --accent-orange: #f97316;
+    --text-dark: #1e293b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--text-primary);
+    line-height: 1.6;
+    background-color: var(--background-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 0.8rem 2.2rem;
+    border-radius: 50px;
+    /* Universal Pill Shape */
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-primary {
+    background-color: var(--cta-blue);
+    color: var(--white);
+    box-shadow: var(--card-shadow);
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0284c7;
+    transform: translateY(-1px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.btn-green {
+    background-color: var(--accent-green);
+    color: var(--white);
+    box-shadow: 0 4px 14px rgba(22, 163, 74, 0.3);
+}
+
+.btn-green:hover {
+    background-color: #15803d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
+}
+
+.btn-outline:hover {
+    background: var(--primary-blue);
+    color: white;
+}
+
+/* Navigation */
+header {
+    background: var(--white);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-light);
+    position: relative;
+    z-index: 1000;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 17px;
+    /* 50% reduction */
+}
+
+.nav-items {
+    display: none;
+}
+
+.header-cta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header-phone-info {
+    text-align: right;
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .header-phone-info {
+        display: block;
+    }
+}
+
+.call-247 {
+    display: block;
+    font-size: 0.75rem;
+    color: #94a3b8;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: -2px;
+}
+
+.header-phone-info a {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text-dark);
+}
+
+.btn-call-now {
+    background-color: var(--cta-blue);
+    color: var(--white) !important;
+    padding: 0.8rem 2.2rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    box-shadow: var(--card-shadow);
+    transition: all 0.2s ease;
+}
+
+.btn-call-now:hover {
+    background-color: #0284c7;
+    transform: translateY(-1px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+@media (min-width: 768px) {
+    .nav-items {
+        display: flex;
+        gap: 2rem;
+        font-weight: 600;
+    }
+
+    .nav-items a {
+        color: var(--text-dark);
+        transition: color 0.2s;
+    }
+
+    .nav-items a:hover {
+        color: var(--primary-blue);
+    }
+}
+
+/* Hero - Professional Trust Design */
+.hero {
+    background: linear-gradient(135deg, var(--background-light) 0%, rgba(15, 23, 42, 0.03) 100%),
+        url('../images/hvac-hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-primary);
+    padding: 3rem 0 2.5rem 0;
+    position: relative;
+}
+
+.hero.hero-home {
+    background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.4)),
+        url('../images/car_photo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero.hero-ac {
+    background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.4)),
+        url('../images/main-image.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero.hero-duct {
+    background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.4)),
+        url('../images/air-ducts-cleaning-main-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero.hero-chimney {
+    background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.4)),
+        url('../images/chimey-cleaning-main.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero.hero-dryer {
+    background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.4)),
+        url('../images/dryer-vent-cleaning-main.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .hero-grid {
+        grid-template-columns: 1.2fr 0.8fr;
+        /* Text larger, Form smaller */
+    }
+}
+
+.hero-content h1 {
+    color: var(--primary-navy);
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+    opacity: 0.9;
+}
+
+.trust-badges {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+    max-width: 600px;
+}
+
+.trust-badge {
+    background: rgba(3, 105, 161, 0.05);
+    border: 1px solid var(--border-light);
+    padding: 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+}
+
+.trust-badge:hover {
+    background: rgba(3, 105, 161, 0.1);
+    border-color: var(--cta-blue);
+}
+
+.trust-badge i {
+    color: var(--cta-blue);
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .hero-content h1 {
+        font-size: 4.2rem;
+    }
+}
+
+/* Hero Form */
+.hero-form-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: var(--card-hover-shadow);
+    color: var(--text-primary);
+    border: 1px solid var(--border-light);
+    position: relative;
+}
+
+.hero-form-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--cta-blue);
+}
+
+.hero-form-card h3 {
+    font-size: 1.6rem;
+    color: var(--primary-navy);
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+}
+
+.hero-form-card p.sub-text {
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    color: var(--text-dark);
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    background: var(--background-light);
+    font-family: 'Lato', sans-serif;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.form-control:focus {
+    border-color: var(--cta-blue);
+    outline: none;
+    background: var(--white);
+    box-shadow: 0 0 0 3px rgba(3, 105, 161, 0.1);
+}
+
+/* Cards & Grids */
+.section-padding {
+    padding: 3rem 0;
+}
+
+.grid-2x3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .grid-2x3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-2x3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.solution-card {
+    background: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px;
+    transition: all 0.2s ease;
+    box-shadow: var(--card-shadow);
+    position: relative;
+    border-left: 4px solid transparent;
+    min-height: 320px;
+}
+
+.solution-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--card-hover-shadow);
+    border-left-color: var(--cta-blue);
+}
+
+/* Ensure both card types have same base structure */
+.solution-card,
+.service-item {
+    background: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px;
+    transition: all 0.2s ease;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-light);
+    cursor: pointer;
+    position: relative;
+    min-height: 320px;
+}
+
+.solution-card:hover,
+.service-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-hover-shadow);
+    border-color: var(--cta-blue);
+}
+
+.service-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Ensure both card types have same styling */
+.solution-card h3,
+.service-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-family: 'EB Garamond', serif;
+    line-height: 1.2;
+}
+
+.solution-card p,
+.service-item p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.service-item p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Services */
+.services-section {
+    background-color: var(--bg-light);
+    padding-top: 1rem;
+}
+
+.service-list-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .service-list-grid {
+        gap: 2rem;
+        max-width: 900px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .service-list-grid {
+        gap: 2rem;
+        max-width: 1000px;
+    }
+}
+
+.service-item {
+    background: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px;
+    transition: all 0.2s ease;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-light);
+    cursor: pointer;
+    position: relative;
+    min-height: 320px;
+}
+
+.service-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-hover-shadow);
+    border-color: var(--cta-blue);
+}
+
+.s-icon {
+    font-size: 2rem;
+    color: var(--cta-blue);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(3, 105, 161, 0.08);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    margin-bottom: 1.5rem;
+}
+
+.service-item:hover .s-icon,
+.solution-card:hover .s-icon {
+    background: rgba(3, 105, 161, 0.15);
+    transform: scale(1.05);
+}
+
+/* Center icons for both card types */
+.solution-card .s-icon,
+.service-item .s-icon {
+    margin: 0 auto 1.5rem;
+}
+
+.service-item:hover .s-icon {
+    background: rgba(3, 105, 161, 0.2);
+}
+
+/* Center icons specifically for Specialized HVAC Solutions */
+.solution-card .s-icon {
+    margin: 0 auto 1.5rem;
+}
+
+.service-item:hover .s-icon {
+    background: rgba(3, 105, 161, 0.15);
+    transform: scale(1.05);
+}
+
+.service-item:hover .s-icon {
+    background: rgba(3, 105, 161, 0.2);
+    transform: scale(1.05);
+}
+
+/* Reviews - Professional Design */
+.reviews-section {
+    background-color: var(--primary-navy);
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+    position: relative;
+}
+
+.reviews-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--cta-blue);
+}
+
+.reviews-section h5 {
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.reviews-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.reviews-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.review-card {
+    background: rgba(51, 65, 85, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: var(--card-hover-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+    min-width: 320px;
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    width: 80%;
+    max-width: 420px;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .review-card {
+        width: 380px;
+    }
+}
+
+.g-logo {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+}
+
+.stars {
+    color: #FFD700;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.reviewer {
+    font-weight: 700;
+    margin-top: 1.5rem;
+    display: block;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.review-date {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    display: block;
+    margin-top: 0.2rem;
+}
+
+.review-card p {
+    color: #e5e7eb;
+    font-style: italic;
+}
+
+/* Footer Professional Design */
+footer {
+    background-color: var(--primary-navy);
+    color: #94a3b8;
+    padding: 3rem 0 0;
+    font-size: 0.95rem;
+}
+
+.footer-row-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+    .footer-row-1 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-row-1 {
+        grid-template-columns: 1.5fr 1fr 1fr;
+    }
+}
+
+.footer-col-links-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Support 2-cols on mobile */
+    gap: 1.5rem;
+}
+
+@media (min-width: 992px) {
+    .footer-col-links-group {
+        display: contents;
+        /* Revert to separate cols on desktop */
+    }
+}
+
+.footer-title {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: #9ca3af;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.location-heading {
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.location-cloud-full {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.loc-tag {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.loc-tag:after {
+    content: " | ";
+    margin-left: 0.5rem;
+}
+
+.loc-tag:last-child:after {
+    content: "";
+}
+
+.footer-row-3 {
+    border-top: 1px solid #1f2937;
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+    background: #0a0a0a;
+}
+
+/* Professional FAQ */
+details {
+    border-bottom: 1px solid var(--border-light);
+    margin-bottom: 0.5rem;
+}
+
+summary {
+    padding: 1rem 2rem 1rem 0;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    padding-right: 3rem;
+    transition: color 0.2s ease;
+}
+
+summary:hover {
+    color: var(--cta-blue);
+}
+
+summary::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    font-weight: 700;
+    color: var(--cta-blue);
+    font-size: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+details[open] summary::after {
+    content: '−';
+}
+
+/* Professional Mobile Float */
+@media (max-width: 767px) {
+    #mobile-float-call {
+        display: flex !important;
+        left: 20px !important;
+        right: auto !important;
+        opacity: 0.9;
+        background-color: var(--cta-blue) !important;
+        border-radius: 50% !important;
+        box-shadow: var(--card-hover-shadow) !important;
+        transition: all 0.2s ease !important;
+    }
+
+    #mobile-float-call:hover {
+        transform: scale(1.05) !important;
+        opacity: 1 !important;
+    }
+}

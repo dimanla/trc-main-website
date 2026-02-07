@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional air duct cleaning in Houston, TX. Improve your indoor air quality with residential and commercial HVAC duct cleaning services. Best rates, certified technicians. Call (832) 400-5765 today!">
+    <title>Air Ducts Cleaning Houston TX | Certified Ducts Cleaning Services | Texas Right Choice</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/trc-faveicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            gap: 0;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            flex-shrink: 0;
+            padding: 0 10px;
+        }
+
+        .carousel-container {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--cta-blue);
+            cursor: pointer;
+            opacity: 0.3;
+            transition: opacity 0.3s ease;
+        }
+
+        .dot.active {
+            opacity: 1;
+        }
+
+        .badge-ba {
+            background: var(--cta-blue);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+    </style>
+
+    <script>
+        let currentSlide = 0;
+        const totalSlides = 2;
+
+        function moveCarousel(direction) {
+            setSlide((currentSlide + direction + totalSlides) % totalSlides);
+        }
+
+        function setSlide(index) {
+            const track = document.querySelector('.carousel-track');
+            const dots = document.querySelectorAll('.dot');
+            if (!track) return;
+
+            currentSlide = index;
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+            if (dots && dots.length > 0) {
+                dots.forEach((dot, idx) => {
+                    dot.classList.toggle('active', idx === currentSlide);
+                });
+            }
+        }
+    </script>
+</head>
+
+<!-- GTM NoScript -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9XMMN98" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="/" class="logo-wrapper" style="display: flex; align-items: center; padding: 10px 0;">
+                <img src="images/trc-logo-2026.png" alt="Texas Right Choice HVAC Logo" class="logo"
+                    style="height: 70px; width: auto; display: block;">
+            </a>
+            <nav class="nav-items">
+                <a href="/">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#reviews">Reviews</a>
+            </nav>
+            <div class="header-cta">
+                <a href="tel:8324005765" class="btn-call-now">
+                    <i class="fas fa-phone-alt"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- GTM NoScript -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9XMMN98" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero hero-duct">
+            <div class="container hero-grid">
+                <!-- Left: Text -->
+                <div class="hero-content">
+                    <div
+                        style="background: rgba(3, 105, 161, 0.1); border: 1px solid var(--cta-blue); display: inline-block; padding: 8px 20px; border-radius: 4px; font-weight: 600; font-size: 0.85rem; margin-bottom: 25px; color: var(--cta-blue); font-family: 'Lato', sans-serif; text-transform: uppercase; letter-spacing: 0.5px;">
+                        <i class="fas fa-certificate" style="font-size: 0.9em; margin-right: 6px;"></i> Certified Air
+                        Duct Cleaning
+                    </div>
+                    <h1>Professional Air Duct Cleaning <span style="display: block;">Services in Houston</span></h1>
+                    <p style="font-size: 1.25rem; color: var(--text-dark); margin-bottom: 2rem; opacity: 0.9;">Improve
+                        your indoor air quality with residential and commercial HVAC duct cleaning services.
+                        Expert solutions since 2016.</p>
+
+                    <div style="margin-top: 2rem;">
+                        <a href="tel:8324005765" class="btn btn-green">
+                            <i class="fas fa-phone-alt"></i> Call Us
+                        </a>
+                    </div>
+
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <i class="fas fa-shield-alt" style="color: var(--accent-orange);"></i> Licensed & Insured
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-star" style="color: #FFD700;"></i> Satisfaction Guaranteed
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="hero-form-card">
+                    <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--cta-blue);">Get
+                        Your Free Estimate</div>
+                    <p class="sub-text">Fast response time. No obligation.</p>
+                    <form id="leadForm">
+                        <input type="hidden" id="referrer" name="referrer" value="">
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div class="form-group">
+                                <label>First Name *</label>
+                                <input type="text" name="firstName" class="form-control" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name *</label>
+                                <input type="text" name="lastName" class="form-control" placeholder="Doe" required>
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div class="form-group">
+                                <label>Phone *</label>
+                                <input type="tel" name="phone" class="form-control" placeholder="(555) 123-4567"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label>Zip Code *</label>
+                                <input type="text" name="zip" class="form-control" placeholder="77096" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="john@example.com">
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label>Message</label>
+                            <textarea name="message" class="form-control" rows="2"
+                                placeholder="Tell us more..."></textarea>
+                        </div>
+
+                        <button type="submit" id="submit-hero" class="btn btn-primary"
+                            style="width: 100%; margin-top: 1rem; font-size: 1.1rem; font-family: 'Lato', sans-serif;">
+                            <i class="fas fa-check-circle"></i> GET FREE QUOTE
+                        </button>
+                        <p
+                            style="font-size: 0.75rem; color: #64748b; text-align: center; margin-top: 1rem; line-height: 1.4;">
+                            By clicking "Get My Free Quote", you agree to our <a href="/privacy-policy.html"
+                                style="text-decoration: underline;">Privacy Policy</a>, <a href="/terms-of-service.html"
+                                style="text-decoration: underline;">Terms of Service</a> and your data being processed
+                            by
+                            AI. and your data being processed
+                            by
+                            AI.
+                        </p>
+                        <div id="form-status"
+                            style="display: none; text-align: center; font-weight: bold; margin-top: 15px; padding: 10px; border-radius: 6px;">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Process Section -->
+        <section class="section-padding" style="background: var(--white);">
+            <div class="container" style="max-width: 1000px;">
+                <h2 style="text-align: center; margin-bottom: 2rem; font-family: 'EB Garamond', serif;">Why Houston
+                    Homes Need Professional Ducts Cleaning</h2>
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                    <div
+                        style="background: var(--background-light); padding: 2rem; border-radius: 12px; border-left: 4px solid var(--cta-blue);">
+                        <h3 style="color: var(--cta-blue); margin-bottom: 1rem; font-family: 'EB Garamond', serif;">
+                            <i class="fas fa-exclamation-triangle" style="margin-right: 0.5rem;"></i>Health Impact
+                        </h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6;">
+                            Houston's humidity + debris create breeding grounds for allergens and bacteria in your
+                            ductwork.
+                        </p>
+                    </div>
+                    <div
+                        style="background: var(--background-light); padding: 2rem; border-radius: 12px; border-left: 4px solid var(--cta-blue);">
+                        <h3 style="color: var(--cta-blue); margin-bottom: 1rem; font-family: 'EB Garamond', serif;">
+                            <i class="fas fa-dollar-sign" style="margin-right: 0.5rem;"></i>Energy Waste
+                        </h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6;">
+                            Clogged ducts force your HVAC system to work harder, increasing energy bills by 20-30%.
+                        </p>
+                    </div>
+                    <div
+                        style="background: var(--background-light); padding: 2rem; border-radius: 12px; border-left: 4px solid var(--cta-blue);">
+                        <h3 style="color: var(--cta-blue); margin-bottom: 1rem; font-family: 'EB Garamond', serif;">
+                            <i class="fas fa-lungs" style="margin-right: 0.5rem;"></i>Poor Air Quality
+                        </h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6;">
+                            Recirculated contaminants cause allergy symptoms, asthma issues, and persistent odors.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Why Choose Texas Right Choice -->
+                <div
+                    style="margin: 4rem 0; padding: 4rem 0; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+                    <div style="text-align: center; max-width: 800px; margin: 0 auto 4rem auto;">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; font-family: 'EB Garamond', serif;">Why
+                            Choose Texas Right Choice</h2>
+                        <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8;">
+                            At Texas Right Choice, we provide professional air ducts cleaning services designed to
+                            improve indoor air quality, enhance HVAC efficiency, and create a healthier home environment
+                            for your family.
+                        </p>
+                    </div>
+
+                    <div class="grid-2x3">
+                        <div class="solution-card"
+                            style="text-align: left; display: flex; align-items: flex-start; gap: 1.5rem; padding: 2rem;">
+                            <div style="font-size: 2.22rem; color: var(--accent-green); flex-shrink: 0;"><i
+                                    class="fas fa-clock"></i></div>
+                            <div>
+                                <h3
+                                    style="margin-bottom: 0.8rem; font-size: 1.2rem; font-family: 'EB Garamond', serif;">
+                                    On-Time & Reliable</h3>
+                                <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary);">Our team
+                                    arrives on time, ready to provide efficient and professional service every time.</p>
+                            </div>
+                        </div>
+
+                        <div class="solution-card"
+                            style="text-align: left; display: flex; align-items: flex-start; gap: 1.5rem; padding: 2rem;">
+                            <div style="font-size: 2.22rem; color: #0ea5e9; flex-shrink: 0;"><i class="fas fa-leaf"></i>
+                            </div>
+                            <div>
+                                <h3
+                                    style="margin-bottom: 0.8rem; font-size: 1.2rem; font-family: 'EB Garamond', serif;">
+                                    Eco-Friendly Solutions</h3>
+                                <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary);">We use
+                                    safe, non-toxic cleaning solutions that effectively remove contaminants without
+                                    harsh chemicals.</p>
+                            </div>
+                        </div>
+
+                        <div class="solution-card"
+                            style="text-align: left; display: flex; align-items: flex-start; gap: 1.5rem; padding: 2rem;">
+                            <div style="font-size: 2.22rem; color: var(--accent-green); flex-shrink: 0;"><i
+                                    class="fas fa-lungs"></i></div>
+                            <div>
+                                <h3
+                                    style="margin-bottom: 0.8rem; font-size: 1.2rem; font-family: 'EB Garamond', serif;">
+                                    Breathe Cleaner Air</h3>
+                                <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary);">We remove
+                                    dust, debris, and allergens, helping your family breathe easier and stay healthier.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="solution-card"
+                            style="text-align: left; display: flex; align-items: flex-start; gap: 1.5rem; padding: 2rem;">
+                            <div style="font-size: 2.22rem; color: #0284c7; flex-shrink: 0;"><i
+                                    class="fas fa-money-bill-wave"></i></div>
+                            <div>
+                                <h3
+                                    style="margin-bottom: 0.8rem; font-size: 1.2rem; font-family: 'EB Garamond', serif;">
+                                    Affordable Pricing</h3>
+                                <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary);">We believe
+                                    clean air should be accessible to everyone. We offer high-quality services at
+                                    competitive rates.</p>
+                            </div>
+                        </div>
+
+                        <div class="solution-card"
+                            style="text-align: left; display: flex; align-items: flex-start; gap: 1.5rem; padding: 2rem;">
+                            <div style="font-size: 2.22rem; color: var(--accent-green); flex-shrink: 0;"><i
+                                    class="fas fa-user-shield"></i></div>
+                            <div>
+                                <h3
+                                    style="margin-bottom: 0.8rem; font-size: 1.2rem; font-family: 'EB Garamond', serif;">
+                                    Expert Technicians</h3>
+                                <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary);">Our
+                                    skilled professionals are NADCA-trained to handle even the toughest ducts cleaning
+                                    jobs.</p>
+                            </div>
+                        </div>
+
+                        <div class="solution-card"
+                            style="text-align: left; display: flex; align-items: flex-start; gap: 1.5rem; padding: 2rem;">
+                            <div style="font-size: 2.22rem; color: #ef4444; flex-shrink: 0;"><i
+                                    class="fas fa-fire-extinguisher"></i></div>
+                            <div>
+                                <h3
+                                    style="margin-bottom: 0.8rem; font-size: 1.2rem; font-family: 'EB Garamond', serif;">
+                                    Fire Hazard Prevention</h3>
+                                <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary);">Our
+                                    cleaning services reduce dust buildup, lowering the risk of fire and keeping your
+                                    home safe.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2
+                    style="text-align: center; margin-top: 3rem; margin-bottom: 2rem; font-family: 'EB Garamond', serif;">
+                    <i class="fas fa-shield-alt" style="margin-right: 0.5rem;"></i>Our NADCA-Certified Cleaning Process
+                </h2>
+                <p style="margin-bottom: 1.5rem;">At Texas Right Choice, we don't just "vacuum out" the vents. We follow
+                    a comprehensive, NADCA-based cleaning protocol to ensure every inch of your system is sanitized. Our
+                    process includes:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem; line-height: 1.8;">
+                    <li><strong>Inspection:</strong> We use high-resolution cameras to identify the specific layout of
+                        your ductwork and locate heavy buildup areas.</li>
+                    <li><strong>Negative Pressure Extraction:</strong> Our powerful vacuum systems create
+                        high-velocity suction that pulls all contaminants away from your living spaces.</li>
+                    <li><strong>Mechanical Agitation:</strong> We utilize specialized brushes and compressed air tools
+                        to dislodge stubborn debris from the duct walls.</li>
+                    <li><strong>Component Cleaning:</strong> We clean the blower motor, coils, and air handler
+                        components to ensure the entire system is free of particulates.</li>
+                    <li><strong>Sanitization:</strong> We apply EPA-approved antimicrobial treatments to eliminate mold
+                        spores and prevent future growth.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Visual Proof Carousel -->
+        <section id="visual-proof" style="background: var(--background-light); padding: 6rem 0; overflow: hidden;">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem; font-family: 'EB Garamond', serif;">Real
+                        Results
+                        for Houston Homeowners</h2>
+                    <p style="color: var(--text-secondary); font-size: 1.1rem;">Swipe to see the literal
+                        difference deep
+                        cleaning makes.</p>
+                </div>
+
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <!-- Slide 1 -->
+                        <div class="carousel-slide">
+                            <div
+                                style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid var(--border-light); margin: 0 10px;">
+                                <div style="text-align: center; padding: 2rem;">
+                                    <div
+                                        style="display: flex; justify-content: space-around; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                                        <div class="placeholder-image"
+                                            style="position: relative; flex: 1; max-width: 50%;">
+                                            <img src="images/air-ducts-plenum.jpg" alt="Before Cleaning"
+                                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                                            <span class="badge-ba"
+                                                style="position: absolute; top: 10px; left: 10px; background: #ef4444; color: white; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: bold;">Before</span>
+                                        </div>
+                                        <div class="placeholder-image"
+                                            style="position: relative; flex: 1; max-width: 50%;">
+                                            <img src="images/Air-duct-cleaning-photo-with-split-line.png"
+                                                alt="After Cleaning"
+                                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                                            <span class="badge-ba"
+                                                style="position: absolute; top: 10px; left: 10px; background: #22c55e; color: white; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: bold;">After</span>
+                                        </div>
+                                    </div>
+                                    <div style="margin-top: 2rem;">
+                                        <h4 style="margin-bottom: 0.5rem; color: var(--cta-blue);">Residential
+                                            Air Duct
+                                            Restoration</h4>
+                                        <p style="color: var(--text-secondary);">"Full system cleaning including
+                                            primary
+                                            supply lines and return plenums."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-slide">
+                            <div
+                                style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid var(--border-light); margin: 0 10px;">
+                                <div style="text-align: center; padding: 2rem;">
+                                    <span class="badge-ba">Expert Results</span>
+                                    <div
+                                        style="max-width: 800px; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                                        <img src="images/duct_before_after_1769290416178.png"
+                                            alt="Visual Validation Results" style="width: 100%; display: block;">
+                                    </div>
+                                    <div style="margin-top: 2rem;">
+                                        <h4 style="margin-bottom: 0.5rem; color: var(--cta-blue);">Deep Metal
+                                            Duct
+                                            Cleaning</h4>
+                                        <p style="color: var(--text-secondary);">"Visual validation of
+                                            particulate
+                                            removal using HEPA Negative Pressure."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <button class="carousel-btn prev" onclick="moveCarousel(-1)"
+                        style="position: absolute; top: 50%; left: -20px; transform: translateY(-50%); width: 50px; height: 50px; border-radius: 50%; background: var(--white); border: 1px solid var(--border-light); cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); z-index: 10;">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" onclick="moveCarousel(1)"
+                        style="position: absolute; top: 50%; right: -20px; transform: translateY(-50%); width: 50px; height: 50px; border-radius: 50%; background: var(--white); border: 1px solid var(--border-light); cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); z-index: 10;">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                    <div class="carousel-dots"
+                        style="display: flex; justify-content: center; gap: 0.5rem; margin-top: 2rem;">
+                        <span class="dot active" onclick="setSlide(0)"></span>
+                        <span class="dot" onclick="setSlide(1)"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section class="section-padding">
+            <div class="container" style="max-width: 800px;">
+                <h2 style="margin-top: 0; margin-bottom: 1.5rem;">When Should You Schedule a Cleaning?</h2>
+                <p style="margin-bottom: 1.5rem;">While most homes benefit from cleaning every 1 to 2 years, certain
+                    factors in <strong>Houston, Texas</strong> may require more frequent service. You should consider an
+                    immediate cleaning if:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem; line-height: 1.8;">
+                    <li>You have pets that shed dander or hair.</li>
+                    <li>Family members suffer from chronic allergies or respiratory issues.</li>
+                    <li>You have recently completed a home renovation or remodeling project.</li>
+                    <li>You notice visible dust plumes coming from vents.</li>
+                    <li>There is a persistent musty odor in your home.</li>
+                    <li>You have recently moved into a new home and aren't sure of the HVAC history.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- UV Light Sanitization -->
+        <section id="uv-solutions" class="section-padding"
+            style="background: var(--background-light); border-top: 1px solid var(--border-light);">
+            <div class="container">
+                <div class="grid-2"
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                    <div class="reveal">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; font-family: 'EB Garamond', serif;">
+                            UV Light Sanitization</h2>
+                        <p
+                            style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                            Advanced UV-C light technology installed directly in your HVAC system eliminates up
+                            to 99.9% of
+                            airborne pathogens, including bacteria, viruses, and mold spores. It's a
+                            professional-grade solution
+                            that provides continuous protection for your indoor environment.
+                        </p>
+                        <ul
+                            style="margin-left: 1.5rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                            <li>Kills germs and bacteria instantly</li>
+                            <li>Reduces allergy symptoms and odors</li>
+                            <li>Prevents mold growth in your ductwork</li>
+                        </ul>
+                    </div>
+                    <div class="reveal"
+                        style="border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                        <img src="images/uv-light.jpg" alt="UV Light Sanitization"
+                            style="width: 100%; height: auto; display: block;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Total System Care -->
+        <section id="system-care" class="section-padding"
+            style="background: var(--white); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+            <div class="container">
+                <div class="grid-2"
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                    <div class="reveal"
+                        style="order: 1; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                        <img src="images/furnace.png" alt="Professional Furnace Cleaning Houston"
+                            style="width: 100%; height: auto; display: block;">
+                    </div>
+                    <div class="reveal" style="order: 2;">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; font-family: 'EB Garamond', serif;">
+                            Total System Care</h2>
+                        <p
+                            style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                            Cleaning your ducts is only half the battle. Our comprehensive system care includes
+                            deep cleaning of
+                            your furnace components and HVAC coils to ensure maximum efficiency and safety.
+                        </p>
+                        <ul
+                            style="margin-left: 1.5rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                            <li>Improves heating & cooling efficiency by up to 15%</li>
+                            <li>Lowers monthly energy bills significantly</li>
+                            <li>Extends the lifespan of your expensive HVAC unit</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Did You Know? Callout -->
+        <section class="section-padding"
+            style="background: var(--background-light); border-bottom: 1px solid var(--border-light);">
+            <div class="container" style="max-width: 800px;">
+                <div class="reveal"
+                    style="background: var(--white); padding: 3rem; border: 1px solid rgba(3, 105, 161, 0.1); border-radius: 16px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <p
+                        style="font-size: 1.25rem; color: var(--cta-blue); font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 1px;">
+                        Did you know?</p>
+                    <p
+                        style="font-size: 1.4rem; color: var(--text-primary); margin: 1.5rem 0 0; font-family: 'EB Garamond', serif; line-height: 1.4;">
+                        Indoor air quality can be 2 to 5 times more polluted than outdoor air, primarily due to
+                        contaminants trapped within residential HVAC systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews (Dark Mode) -->
+        <section id="reviews" class="reviews-section" style="background: #0f172a; padding: 4rem 0;">
+            <div class="container">
+                <h5
+                    style="text-transform: uppercase; letter-spacing: 2px; color: var(--accent-green); margin-bottom: 1rem;">
+                    Texas Right Choice Reviews</h5>
+                <h3 style="color: white; margin-bottom: 3rem; font-size: 2rem;">Rated 5/5 Stars by Your
+                    Neighbors</h3>
+
+                <div class="reviews-carousel">
+                    <div class="review-card">
+                        <!-- Google Logo SVG -->
+                        <svg style="position: absolute; top: 1.5rem; right: 1.5rem; width: 24px;" viewBox="0 0 24 24">
+                            <path
+                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                fill="#4285F4" />
+                            <path
+                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                fill="#34A853" />
+                            <path
+                                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                fill="#FBBC05" />
+                            <path
+                                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                fill="#EA4335" />
+                        </svg>
+                        <div class="stars" style="color: #fbbf24; margin-bottom: 1rem;">★★★★★</div>
+                        <p style="margin-bottom: 1.5rem; line-height: 1.6;">"I called and
+                            scheduled for my air ducts to get cleaned and inspected... They came out, were very
+                            professional... A+ company!"</p>
+                        <div class="reviewer" style="font-weight: 700; color: #1e293b; font-size: 0.9rem;">
+                            Sandra Johnson</div>
+                        <div class="review-date" style="font-size: 0.8rem; color: #64748b;">Verified Review • 1
+                            week ago</div>
+                    </div>
+                    <div class="review-card">
+                        <!-- Google Logo SVG -->
+                        <svg style="position: absolute; top: 1.5rem; right: 1.5rem; width: 24px;" viewBox="0 0 24 24">
+                            <path
+                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                fill="#4285F4" />
+                            <path
+                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                fill="#34A853" />
+                            <path
+                                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                fill="#FBBC05" />
+                            <path
+                                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                fill="#EA4335" />
+                        </svg>
+                        <div class="stars" style="color: #fbbf24; margin-bottom: 1rem;">★★★★★</div>
+                        <p style="margin-bottom: 1.5rem; line-height: 1.6;">"Francisco and his
+                            team were amazing... The video while they are cleaning so you see what they did...
+                            Great job guys!"</p>
+                        <div class="reviewer" style="font-weight: 700; color: #1e293b; font-size: 0.9rem;">
+                            Cameron B</div>
+                        <div class="review-date" style="font-size: 0.8rem; color: #64748b;">Verified Review • 3
+                            days ago</div>
+                    </div>
+                    <div class="review-card">
+                        <!-- Google Logo SVG -->
+                        <svg style="position: absolute; top: 1.5rem; right: 1.5rem; width: 24px;" viewBox="0 0 24 24">
+                            <path
+                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                fill="#4285F4" />
+                            <path
+                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                fill="#34A853" />
+                            <path
+                                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                fill="#FBBC05" />
+                            <path
+                                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                fill="#EA4335" />
+                        </svg>
+                        <div class="stars" style="color: #fbbf24; margin-bottom: 1rem;">★★★★★</div>
+                        <p style="margin-bottom: 1.5rem; line-height: 1.6;">"I had a fantastic
+                            experience... The team was professional... showed me before and after pictures... I
+                            highly recommend Texas Right Choice."</p>
+                        <div class="reviewer" style="font-weight: 700; color: #1e293b; font-size: 0.9rem;">Jaime
+                            Ortega</div>
+                        <div class="review-date" style="font-size: 0.8rem; color: #64748b;">Verified Review • 1
+                            month ago</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div
+            style="background: var(--cta-blue); color: white; padding: 4rem 0; text-align: center; margin-bottom: 0.5rem; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;">
+            <div class="container">
+                <h3
+                    style="color: white; margin-bottom: 2rem; font-size: 2.5rem; text-shadow: 0 1px 2px rgba(0,0,0,0.2); font-family: 'EB Garamond', serif;">
+                    Ready to upgrade your comfort?</h3>
+                <a href="tel:8324005765" class="btn"
+                    style="background: white; color: var(--cta-blue); border: 2px solid white; font-family: 'Lato', sans-serif;">
+                    <i class="fas fa-phone-alt"></i> Call Us
+                </a>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 800px;">
+            <details>
+                <summary>What is included in a professional air duct cleaning?</summary>
+                <p>A comprehensive cleaning includes all supply and return ducts, registers, grills, and the
+                    main plenum box. We also perform a visual inspection of your furnace and blower motor to
+                    ensure the entire system is free of debris.</p>
+            </details>
+            <details>
+                <summary>How long does the air duct cleaning process take?</summary>
+                <p>Most residential projects take between 3 to 5 hours, depending on the size of the home and
+                    the complexity of the ductwork layout. We take our time to ensure a thorough deep clean.</p>
+            </details>
+            <details>
+                <summary>Do I need to be home during the air duct cleaning?</summary>
+                <p>Yes, we recommend an adult be present to allow access to all areas and to review the
+                    before-and-after results with our technician. This ensures all your specific concerns are
+                    addressed.</p>
+            </details>
+            <details>
+                <summary>Will air duct cleaning make a mess in my house?</summary>
+                <p>No, we use high-power HEPA negative pressure systems that contain all dust and debris within
+                    our equipment. Our technicians also use drop cloths and shoe covers to protect your living
+                    spaces.</p>
+            </details>
+            <details>
+                <summary>How do you protect my floors and furniture?</summary>
+                <p>We use protective floor runners, corner guards for our hoses, and plastic sheeting where
+                    necessary to ensure your home remains exactly as we found it, but with cleaner air.</p>
+            </details>
+            <details>
+                <summary>Is the equipment you use loud?</summary>
+                <p>Our powerful vacuum systems are powerful but stayed outside. The portable equipment used
+                    indoors is similar to a heavy-duty vacuum in terms of noise level, so it won't be
+                    excessively disruptive.</p>
+            </details>
+            <details>
+                <summary>Do you clean the entire HVAC system or just the ducts?</summary>
+                <p>We clean the entire air path, including the supply ducts, return air ducts, and the
+                    components of the air handler. We also recommend periodic coil cleaning for maximum
+                    efficiency.</p>
+            </details>
+            <details>
+                <summary>Are the cleaning products you use safe for children and pets?</summary>
+                <p>Absolutely. We use EPA-approved, non-toxic antimicrobial treatments that are specifically
+                    designed for HVAC systems and are safe for all household members, including pets.</p>
+            </details>
+            <details>
+                <summary>Can air duct cleaning remove cigarette smoke odors?</summary>
+                <p>Yes, removing the smoke particles and residue trapped inside the ducts is a critical step in
+                    eliminating persistent odors. Our sanitization process helps neutralize the smell at the
+                    source.</p>
+            </details>
+            <details>
+                <summary>Will cleaning my ducts stop my smoke alarms from going off?</summary>
+                <p>If your alarms are being triggered by fine dust particles circulating from the vents, a deep
+                    cleaning will significantly reduce particulate matter and resolve that specific issue.</p>
+            </details>
+            <details>
+                <summary>Should I change my air filter after the cleaning is done?</summary>
+                <p>Yes, we always recommend installing a fresh, high-quality filter immediately after the
+                    cleaning to ensure your newly sanitized system remains clean and efficient.</p>
+            </details>
+            <details>
+                <summary>How can I maintain clean ducts between professional visits?</summary>
+                <p>Using high-efficiency filters, changing them every 3 months, and keeping your home's
+                    vacuuming and dusting routine will help minimize the amount of debris that enters your
+                    system.</p>
+            </details>
+            <details>
+                <summary>Do you provide a report or photos of the results?</summary>
+                <p>Yes, our technicians take before-and-after photos of your system's interior to provide visual
+                    proof of the cleaning results. We want you to see the difference for yourself.</p>
+            </details>
+            <details>
+                <summary>What certifications do your technicians hold?</summary>
+                <p>Our technicians are trained according to NADCA standards and hold various industry
+                    certifications to ensure they provide the highest level of professional service.</p>
+            </details>
+            <details>
+                <summary>Do you offer residential and commercial duct cleaning services?</summary>
+                <p>Yes, Texas Right Choice provides professional duct cleaning for single-family homes,
+                    apartments, and commercial buildings of all sizes across the Greater Houston area.</p>
+            </details>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container footer-row-1">
+            <!-- Brand Column -->
+            <div class="footer-col">
+                <h4 class="footer-title">Texas Right Choice</h4>
+                <p>Treating your home like our own. Professional HVAC and air quality services across Greater Houston.
+                </p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="margin-bottom: 0.8rem;">
+                        <a href="tel:3465861016" style="color: white; font-weight: 700;">
+                            <i class="fas fa-phone-alt"></i> (346) 586-1016
+                        </a>
+                    </p>
+                    <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">Houston, TX 77096</p>
+
+                    <div class="social-links" style="display: flex; gap: 1rem;">
+                        <a href="https://www.google.com/maps/place/Texas+Right+Choice/@29.6741051,-95.4892218,17z/data=!3m1!4b1!4m6!3m5!1s0x8640e9b310579a51:0x2eb85deb9c4fa38e!8m2!3d29.6741051!4d-95.4892218!16s%2Fg%2F11kctrsbb1"
+                            target="_blank" style="color: #94a3b8; font-size: 1.2rem;"><i
+                                class="fas fa-map-marker-alt"></i></a>
+                        <a href="https://www.facebook.com/texasrightchoice" target="_blank"
+                            style="color: #94a3b8; font-size: 1.2rem;"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/texasrightchoice/" target="_blank"
+                            style="color: #94a3b8; font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-col-links-group">
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/air-duct-cleaning-houston.html">Air Duct Cleaning</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#about">About Us</a></li>
+                        <li><a href="/#financing">Financing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="/air-duct-cleaning-houston.html">Air Duct Cleaning</a></li>
+
+                        <li><a href="/attic-insulation-houston.html">Attic Insulation</a></li>
+                        <li><a href="/chimney-sweep-houston.html">Chimney Sweep</a></li>
+                        <li><a href="/dryer-vent-cleaning-houston.html">Dryer Vent Cleaning</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Location Cloud Row -->
+        <div class="container" style="border-top: 1px solid #1f2937; padding: 3rem 1rem 1.5rem;">
+            <h5 class="location-heading">Our Service Areas</h5>
+            <div class="location-cloud-full">
+                <span class="loc-tag">Alief</span> <span class="loc-tag">Alvin</span> <span
+                    class="loc-tag">Bacliff</span> <span class="loc-tag">Barker</span> <span
+                    class="loc-tag">Baytown</span> <span class="loc-tag">Beasley</span> <span
+                    class="loc-tag">Bellaire</span> <span class="loc-tag">Boling</span> <span
+                    class="loc-tag">Brookshire</span> <span class="loc-tag">Channelview</span> <span
+                    class="loc-tag">Conroe</span> <span class="loc-tag">Crosby</span> <span
+                    class="loc-tag">Cypress</span> <span class="loc-tag">Damon</span> <span
+                    class="loc-tag">Danbury</span> <span class="loc-tag">Danciger</span> <span
+                    class="loc-tag">Dayton</span> <span class="loc-tag">Deer Park</span> <span
+                    class="loc-tag">Dickinson</span> <span class="loc-tag">Fresno</span> <span
+                    class="loc-tag">Friendswood</span> <span class="loc-tag">Fulshear</span> <span
+                    class="loc-tag">Galena Park</span> <span class="loc-tag">Galveston</span> <span
+                    class="loc-tag">Guy</span> <span class="loc-tag">Hardin</span> <span
+                    class="loc-tag">Highlands</span> <span class="loc-tag">Hitchcock</span> <span
+                    class="loc-tag">Hockley</span> <span class="loc-tag">Houston</span> <span
+                    class="loc-tag">Huffman</span> <span class="loc-tag">Hufsmith</span> <span
+                    class="loc-tag">Humble</span> <span class="loc-tag">Katy</span> <span class="loc-tag">Kemah</span>
+                <span class="loc-tag">Kendleton</span> <span class="loc-tag">La Marque</span> <span class="loc-tag">La
+                    Porte</span> <span class="loc-tag">Lane City</span> <span class="loc-tag">League City</span> <span
+                    class="loc-tag">Liberty</span> <span class="loc-tag">Liverpool</span> <span
+                    class="loc-tag">Magnolia</span> <span class="loc-tag">Manvel</span> <span class="loc-tag">Missouri
+                    City</span> <span class="loc-tag">Mont Belvieu</span> <span class="loc-tag">Montgomery</span> <span
+                    class="loc-tag">Needville</span> <span class="loc-tag">New Caney</span> <span class="loc-tag">North
+                    Houston</span> <span class="loc-tag">Orchard</span> <span class="loc-tag">Pasadena</span> <span
+                    class="loc-tag">Pattison</span> <span class="loc-tag">Pearland</span> <span
+                    class="loc-tag">Pinehurst</span> <span class="loc-tag">Plantersville</span> <span
+                    class="loc-tag">Pledger</span> <span class="loc-tag">Porter</span> <span class="loc-tag">Prairie
+                    View</span> <span class="loc-tag">Richmond</span> <span class="loc-tag">Rosenberg</span> <span
+                    class="loc-tag">Rosharon</span> <span class="loc-tag">Santa Fe</span> <span
+                    class="loc-tag">Seabrook</span> <span class="loc-tag">Simonton</span> <span class="loc-tag">South
+                    Houston</span> <span class="loc-tag">Splendora</span> <span class="loc-tag">Spring</span> <span
+                    class="loc-tag">Stafford</span> <span class="loc-tag">Sugar Land</span> <span class="loc-tag">Texas
+                    City</span> <span class="loc-tag">Thompsons</span> <span class="loc-tag">Tomball</span> <span
+                    class="loc-tag">Waller</span> <span class="loc-tag">Wallisville</span> <span
+                    class="loc-tag">Webster</span>
+            </div>
+        </div>
+
+        <!-- Utility Bar -->
+        <div class="footer-row-3">
+            <div class="container"
+                style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <div style="font-size: 0.85rem; color: #64748b;">
+                    Advertised and managed by <a href="https://clikly.com" target="_blank"
+                        style="color: #94a3b8; font-weight: 700;">Clikly</a>
+                </div>
+                <div style="font-size: 0.85rem; color: #64748b;">
+                    &copy; <span id="copyright-year-footer"></span> Texas Right Choice. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Mobile Floating Button -->
+    <a href="tel:8324005765" id="mobile-float-call"
+        style="display: none; position: fixed; bottom: 20px; left: 20px; background-color: var(--accent-green); color: white; width: 60px; height: 60px; border-radius: 50%; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; text-decoration: none; opacity: 0.85;">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
