@@ -222,35 +222,35 @@ header {
 }
 
 .hero.hero-home {
-    background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.4)),
+    background: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)),
         url('../images/car_photo.png');
     background-size: cover;
     background-position: center;
 }
 
 .hero.hero-ac {
-    background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.4)),
+    background: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)),
         url('../images/main-image.jpeg');
     background-size: cover;
     background-position: center;
 }
 
 .hero.hero-duct {
-    background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.4)),
+    background: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)),
         url('../images/air-ducts-cleaning-main-image.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .hero.hero-chimney {
-    background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.4)),
+    background: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)),
         url('../images/chimey-cleaning-main.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .hero.hero-dryer {
-    background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.4)),
+    background: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)),
         url('../images/dryer-vent-cleaning-main.jpg');
     background-size: cover;
     background-position: center;
@@ -294,8 +294,8 @@ header {
 }
 
 .trust-badge {
-    background: rgba(3, 105, 161, 0.05);
-    border: 1px solid var(--border-light);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 1rem;
     border-radius: 4px;
     font-weight: 600;
@@ -303,17 +303,17 @@ header {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    color: var(--text-primary);
+    color: var(--background-light);
     transition: all 0.2s ease;
 }
 
 .trust-badge:hover {
-    background: rgba(3, 105, 161, 0.1);
-    border-color: var(--cta-blue);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .trust-badge i {
-    color: var(--cta-blue);
+    color: var(--background-light);
     font-size: 1.2rem;
 }
 
