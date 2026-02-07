@@ -23,6 +23,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 * {
@@ -36,6 +38,9 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     background-color: var(--background-light);
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
 }
 
 h1,
@@ -317,6 +322,40 @@ header {
     font-size: 1.2rem;
 }
 
+/* Mobile Hero Optimizations */
+@media (max-width: 767px) {
+    .hero {
+        padding: 2rem 0 1.5rem 0;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .trust-badges {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        margin-top: 1.5rem;
+    }
+
+    .trust-badge {
+        font-size: 0.8rem;
+        padding: 0.75rem;
+    }
+
+    .hero-grid {
+        gap: 2rem;
+    }
+}
+
 @media (min-width: 768px) {
     .hero-content h1 {
         font-size: 4.2rem;
@@ -397,9 +436,15 @@ header {
 
 .grid-2x3 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem;
     margin-top: 0.5rem;
+}
+
+@media (min-width: 640px) {
+    .grid-2x3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 768px) {
@@ -502,12 +547,18 @@ header {
 
 .service-list-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 1.5rem;
     margin-top: 1rem;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (min-width: 640px) {
+    .service-list-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 768px) {
