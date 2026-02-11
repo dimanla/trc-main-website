@@ -329,6 +329,15 @@ header {
     font-size: 1.2rem;
 }
 
+/* Make icon colors blue for better visibility on white backgrounds */
+i.fa-shield-alt,
+i.fa-umbrella,
+i.fa-certificate,
+i.fa-calendar-check,
+i.fa-home {
+    color: var(--cta-blue) !important;
+}
+
 /* Mobile Hero Optimizations */
 @media (max-width: 767px) {
     .hero {
@@ -348,12 +357,38 @@ header {
         margin-bottom: 1.5rem;
     }
 
-    /* Hide CTAs in hero on mobile */
+    /* Better home hero framing on mobile */
+    .hero.hero-home {
+        background-position: 30% center;
+        background-size: cover;
+    }
+
+    @media (max-width: 480px) {
+        .hero.hero-home {
+            background-size: 150%;
+            /* Prevent extreme zoom by limiting size on very small screens */
+            background-position: 25% center;
+        }
+    }
+
+    /* Enable CTA buttons in hero on mobile now that form is below */
     .hero .btn,
     .hero .btn-primary,
     .hero .btn-green,
     .hero-content .btn {
+        display: inline-flex !important;
+        margin-top: 1rem;
+    }
+
+    .hero-form-container-desktop {
         display: none !important;
+    }
+
+    .mobile-form-section {
+        display: block;
+        background: var(--white);
+        padding: 2rem 0 4rem;
+        border-top: 1px solid var(--border-light);
     }
 
     /* Trust badges in horizontal row */
@@ -401,21 +436,52 @@ header {
     font-size: 1.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .hero-content h1 {
         font-size: 4.2rem;
     }
+
+    .hero-form-container-desktop {
+        display: block;
+    }
+
+    .mobile-form-section {
+        display: none;
+    }
+}
+
+/* Base styles for form visibility (Mobile/Tablet First) */
+.hero-form-container-desktop {
+    display: none;
+}
+
+.mobile-form-section {
+    display: block;
+    background: var(--white);
+    padding: 2rem 0 4rem;
+    border-top: 1px solid var(--border-light);
 }
 
 /* Hero Form */
 .hero-form-card {
     background: var(--white);
-    padding: 2.5rem;
-    border-radius: 8px;
+    padding: 0;
+    /* Remove padding for iframe to be edge-to-edge if needed, or keep for spacing */
+    border-radius: 15px;
     box-shadow: var(--card-hover-shadow);
     color: var(--text-primary);
     border: 1px solid var(--border-light);
     position: relative;
+    overflow: hidden;
+    min-height: 600px;
+}
+
+@media (max-width: 767px) {
+    .hero-form-card {
+        padding: 0;
+        min-height: 800px;
+        /* Iframe needs more height on mobile usually */
+    }
 }
 
 .hero-form-card::before {
