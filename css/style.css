@@ -1282,3 +1282,75 @@ details[open] summary::after {
         opacity: 1 !important;
     }
 }
+
+/* Credibility Bar Base Styles */
+.credibility-container {
+    background: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 1px solid var(--border-light);
+    width: 100%;
+    overflow: hidden;
+    /* Prevent scroll */
+}
+
+.credibility-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap !important;
+    /* Force wrap */
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.credibility-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(3, 105, 161, 0.05);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(3, 105, 161, 0.2);
+    box-sizing: border-box;
+    /* Ensure padding doesn't add to width */
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 550px !important;
+        /* Reduce height to prevent zooming */
+        padding-top: 2.5rem;
+        /* Reduced by 50% from 5rem */
+        background-position: center top !important;
+    }
+
+    .credibility-container {
+        padding: 1.5rem 0 !important;
+    }
+
+    .credibility-bar {
+        gap: 0.75rem !important;
+        /* Slightly smaller gap */
+        justify-content: center !important;
+        padding: 0 10px;
+        /* Add side padding */
+    }
+
+    .credibility-item {
+        flex: 0 0 calc(50% - 1rem) !important;
+        /* Explicit width calculation */
+        width: calc(50% - 1rem) !important;
+        padding: 0.75rem 0.5rem !important;
+        font-size: 0.8rem;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .credibility-item i {
+        font-size: 1rem !important;
+    }
+}
