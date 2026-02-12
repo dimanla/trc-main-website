@@ -358,13 +358,24 @@ i.fa-home {
     }
 
     /* Better home hero framing on mobile */
-    .hero.hero-home {
+    .hero.hero-home,
+    .hero.hero-duct,
+    .hero.hero-attic,
+    .hero.hero-chimney,
+    .hero.hero-dryer,
+    .hero.hero-ac {
         background-position: 30% center;
         background-size: cover;
     }
 
     @media (max-width: 480px) {
-        .hero.hero-home {
+
+        .hero.hero-home,
+        .hero.hero-duct,
+        .hero.hero-attic,
+        .hero.hero-chimney,
+        .hero.hero-dryer,
+        .hero.hero-ac {
             background-size: 150%;
             /* Prevent extreme zoom by limiting size on very small screens */
             background-position: 25% center;
@@ -445,9 +456,7 @@ i.fa-home {
         display: block;
     }
 
-    .mobile-form-section {
-        display: none;
-    }
+
 }
 
 /* Base styles for form visibility (Mobile/Tablet First) */
@@ -455,11 +464,47 @@ i.fa-home {
     display: none;
 }
 
-.mobile-form-section {
+.contact-section {
     display: block;
     background: var(--white);
-    padding: 2rem 0 4rem;
+    padding: 3rem 0;
     border-top: 1px solid var(--border-light);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contact-image-col {
+    text-align: center;
+    order: 1;
+    /* Image first on mobile */
+}
+
+.contact-form-col {
+    order: 2;
+    /* Form second on mobile */
+}
+
+/* Desktop styles for contact section */
+@media (min-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .contact-image-col {
+        order: 1;
+        text-align: right;
+        /* Align image towards center/form */
+    }
+
+    .contact-form-col {
+        order: 2;
+    }
 }
 
 /* Hero Form */
