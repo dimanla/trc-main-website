@@ -267,7 +267,7 @@ header {
 
 .hero.hero-attic {
     background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)),
-        url('../images/attic-insulation-main.jpg');
+        url('../images/attic-hero.jpg');
     background-size: cover;
     background-position: center;
 }
