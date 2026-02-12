@@ -222,6 +222,7 @@ header {
         url('../images/hvac-hero-bg.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     color: var(--background-light);
     padding: 3rem 0 2.5rem 0;
     position: relative;
