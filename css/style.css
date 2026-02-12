@@ -64,6 +64,7 @@ a {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 1rem;
+    width: 100%;
 }
 
 /* Buttons */
@@ -224,6 +225,9 @@ header {
     color: var(--background-light);
     padding: 3rem 0 2.5rem 0;
     position: relative;
+    min-height: 750px;
+    display: flex;
+    align-items: center;
 }
 
 .hero.hero-home {
