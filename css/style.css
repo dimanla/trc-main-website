@@ -236,6 +236,7 @@ header {
         url('../images/car_photo.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero.hero-ac {
@@ -243,6 +244,7 @@ header {
         url('../images/main-image.jpeg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero.hero-duct {
@@ -250,6 +252,7 @@ header {
         url('../images/air-ducts-cleaning-main-image.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero.hero-chimney {
@@ -257,6 +260,7 @@ header {
         url('../images/chimey-cleaning-main.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero.hero-dryer {
@@ -264,6 +268,7 @@ header {
         url('../images/dryer-vent-cleaning-main.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero.hero-attic {
@@ -271,6 +276,7 @@ header {
         url('../images/attic-hero.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-grid {
