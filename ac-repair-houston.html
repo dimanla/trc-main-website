@@ -400,43 +400,28 @@
                 </div>
 
                 <div class="carousel-container" style="position: relative; max-width: 900px; margin: 0 auto;">
-                    <div class="carousel-track reveal" style="gap: 0;">
+                    <div class="carousel-track" style="gap: 0; display: flex; transition: transform 0.5s ease-in-out;">
                         <!-- Slide 1 -->
-                        <div class="carousel-slide">
+                        <div class="carousel-slide"
+                            style="min-width: 100%; flex-shrink: 0; padding: 0 10px; box-sizing: border-box;">
                             <div
-                                style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid var(--border-light); margin: 0 10px;">
-                                <div class="placeholder-image">
-                                    <span class="badge-ba">Before & After</span>
-                                    <i class="fas fa-images"></i>
-                                    <p>HOUSTON REPAIR #2055</p>
-                                </div>
-                                <div style="padding: 2rem; text-align: center; background: rgba(3, 105, 161, 0.02);">
-                                    <h4 style="margin-bottom: 0.5rem; color: var(--cta-blue);">Emergency Capacitor Swap
-                                    </h4>
-                                    <p style="color: var(--text-secondary);">"Restored system power and cooling in 45
-                                        minutes for a Sugar Land resident."</p>
-                                </div>
+                                style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid var(--border-light);">
+                                <img src="images/ac-repair-1.png" alt="AC Repair Result 1"
+                                    style="width: 100%; height: 400px; object-fit: cover; display: block;">
                             </div>
                         </div>
                         <!-- Slide 2 -->
-                        <div class="carousel-slide">
+                        <div class="carousel-slide"
+                            style="min-width: 100%; flex-shrink: 0; padding: 0 10px; box-sizing: border-box;">
                             <div
-                                style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid var(--border-light); margin: 0 10px;">
-                                <div class="placeholder-image">
-                                    <span class="badge-ba">Visual Proof</span>
-                                    <i class="fas fa-images"></i>
-                                    <p>HOUSTON REPAIR #2056</p>
-                                </div>
-                                <div style="padding: 2rem; text-align: center; background: rgba(3, 105, 161, 0.02);">
-                                    <h4 style="margin-bottom: 0.5rem; color: var(--cta-blue);">Condensate Line Clearing
-                                    </h4>
-                                    <p style="color: var(--text-secondary);">"Professional clearing of blocked drain
-                                        lines to prevent attic water damage."</p>
-                                </div>
+                                style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid var(--border-light);">
+                                <img src="images/ac-repair-2.png" alt="AC Repair Result 2"
+                                    style="width: 100%; height: 400px; object-fit: cover; display: block;">
                             </div>
                         </div>
                     </div>
 
+                    <!-- Carousel Controls -->
                     <button class="carousel-btn prev" onclick="moveCarousel(-1)"
                         style="position: absolute; top: 50%; left: -20px; transform: translateY(-50%); width: 50px; height: 50px; border-radius: 50%; background: var(--white); border: 1px solid var(--border-light); cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); z-index: 10;">
                         <i class="fas fa-chevron-left"></i>
@@ -448,10 +433,8 @@
 
                     <div class="carousel-dots"
                         style="display: flex; justify-content: center; gap: 0.5rem; margin-top: 2rem;">
-                        <span class="dot active" onclick="setSlide(0)"
-                            style="width: 10px; height: 10px; border-radius: 50%; background: var(--cta-blue); cursor: pointer; opacity: 1;"></span>
-                        <span class="dot" onclick="setSlide(1)"
-                            style="width: 10px; height: 10px; border-radius: 50%; background: var(--cta-blue); cursor: pointer; opacity: 0.3;"></span>
+                        <span class="dot active" onclick="setSlide(0)"></span>
+                        <span class="dot" onclick="setSlide(1)"></span>
                     </div>
                 </div>
             </div>

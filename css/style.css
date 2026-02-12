@@ -241,7 +241,7 @@ header {
 
 .hero.hero-ac {
     background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)),
-        url('../images/main-image.jpeg');
+        url('../images/ac-repair-hero.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1327,7 +1327,14 @@ details[open] summary::after {
 
 /* Mobile Optimizations */
 @media (max-width: 768px) {
-    .hero {
+
+    .hero,
+    .hero.hero-home,
+    .hero.hero-ac,
+    .hero.hero-duct,
+    .hero.hero-chimney,
+    .hero.hero-dryer,
+    .hero.hero-attic {
         min-height: 550px !important;
         /* Reduce height to prevent zooming */
         padding-top: 2.5rem;
@@ -1337,6 +1344,8 @@ details[open] summary::after {
         /* Force no-repeat on mobile */
         background-size: cover !important;
         /* Ensure cover on mobile */
+        background-attachment: scroll !important;
+        /* Prevent fixed bg glitches */
     }
 
     .credibility-container {
