@@ -8,5 +8,7 @@ Disallow: /images/
 Disallow: /fonts/
 Disallow: /privacy-policy.html
 Disallow: /terms-and-conditions.html
+Disallow: /tmp/
+Disallow: /post/
 
 Sitemap: https://texasrightchoice.com/sitemap.xml
