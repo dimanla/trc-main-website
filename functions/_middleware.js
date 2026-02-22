@@ -21,6 +21,11 @@ export async function onRequest(context) {
     return context.next();
   }
 
+  // Exclude DFW / Dallas / Fort Worth pages from the Houston wildcard redirects
+  if (path.includes('dallas') || path.includes('dfw') || path.includes('fort-worth') || path.includes('fortworth') || path.includes('forth-worth') || path.includes('forthworth')) {
+    return context.next();
+  }
+
   // Check if it's an air duct related path
   if (path.includes('air-duct') || path.includes('air duct') || path.includes('airduct')) {
     if (path.includes('99')) {
