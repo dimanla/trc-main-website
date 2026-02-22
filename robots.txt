@@ -7,7 +7,7 @@ Disallow: /js/
 Disallow: /images/
 Disallow: /fonts/
 Disallow: /privacy-policy.html
-Disallow: /terms-and-conditions.html
+Disallow: /terms-of-service.html
 Disallow: /tmp/
 Disallow: /post/
 

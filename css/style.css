@@ -44,8 +44,11 @@ body {
 }
 
 h1,
+.h1-style,
 h2,
+.h2-style,
 h3,
+.h3-style,
 h4,
 h5,
 h6 {
@@ -293,7 +296,8 @@ header {
     }
 }
 
-.hero-content h1 {
+.hero-content h1,
+.hero-content .h1-style {
     color: rgba(248, 250, 252, 0.9);
     font-size: 2.8rem;
     margin-bottom: 1.5rem;
@@ -358,7 +362,8 @@ i.fa-home {
         background-attachment: scroll;
     }
 
-    .hero-content h1 {
+    .hero-content h1,
+    .hero-content .h1-style {
         font-size: 2rem;
         margin-bottom: 1rem;
     }
@@ -459,7 +464,9 @@ i.fa-home {
 }
 
 @media (min-width: 992px) {
-    .hero-content h1 {
+
+    .hero-content h1,
+    .hero-content .h1-style {
         font-size: 4.2rem;
     }
 
@@ -550,7 +557,8 @@ i.fa-home {
     background: var(--cta-blue);
 }
 
-.hero-form-card h3 {
+.hero-form-card h3,
+.hero-form-card .h3-style {
     font-size: 1.6rem;
     color: var(--primary-navy);
     margin-bottom: 0.5rem;
@@ -672,7 +680,8 @@ i.fa-home {
     border-color: var(--cta-blue);
 }
 
-.service-item h3 {
+.service-item h3,
+.service-item .h3-style {
     font-size: 1.3rem;
     margin-bottom: 1rem;
     font-weight: 600;
@@ -681,7 +690,9 @@ i.fa-home {
 
 /* Ensure both card types have same styling */
 .solution-card h3,
-.service-item h3 {
+.solution-card .h3-style,
+.service-item h3,
+.service-item .h3-style {
     font-size: 1.3rem;
     margin-bottom: 1rem;
     font-weight: 600;
@@ -1078,15 +1089,18 @@ details[open] summary::after {
     }
 
     /* Typography adjustments */
-    h1 {
+    h1,
+    .h1-style {
         font-size: 2rem !important;
     }
 
-    h2 {
+    h2,
+    .h2-style {
         font-size: 1.75rem !important;
     }
 
-    h3 {
+    h3,
+    .h3-style {
         font-size: 1.5rem !important;
     }
 
